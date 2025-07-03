@@ -1,2 +1,5 @@
 *
 !.gitignore
+# Allow public storage and consultants folder
+!/storage/app/public/
+!/storage/app/public/consultants/
