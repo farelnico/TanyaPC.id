@@ -1,3 +1,6 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
 <footer class="site-footer">
   <div class="footer-inner">
 
@@ -64,7 +67,7 @@
       <a href="#"><i class="fab fa-whatsapp"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-tiktok"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="https://youtu.be/AqDyPdoti2g"><i class="fab fa-youtube"></i></a>
       <a href="#"><i class="fab fa-linkedin-in"></i></a>
     </div>
   </div>
