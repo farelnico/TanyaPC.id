@@ -9,12 +9,31 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Font & auth.css (agar sama dengan login) -->
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="{{ asset('css/auth.css') }}" rel="stylesheet">
+
+  <!-- ===== STYLE LATAR GRADIENT ===== -->
+  <style>
+      html,body{
+          height:100%;
+          margin:0;
+          /* sama persis dg login: biru muda → putih */
+          background:linear-gradient(135deg,
+                      #e7f1ff 0%,
+                      #c9e3ff 40%,
+                      #ffffff 100%);
+          background-color:#e7f1ff; /* fallback */
+          overflow:hidden;
+          font-family:Inter,sans-serif;
+      }
+      body{
+          display:flex;
+          align-items:center;
+          justify-content:center;
+      }
+  </style>
 </head>
-<body class="d-flex align-items-center justify-content-center overflow-hidden"
-      style="height:100vh;background:#f5f7fb;">
+<body>
 
   <!--  KARTU REGISTRASI  -->
   <div class="card shadow-lg rounded-4 p-4 my-2"
@@ -35,7 +54,7 @@
       <form method="POST" action="{{ url('/register') }}">
           @csrf
 
-          <!-- NAMA LENGKAP -->
+          <!-- NAMA -->
           <div class="form-floating mb-3">
               <input type="text" name="name"
                      class="form-control @error('name') is-invalid @enderror"
@@ -53,7 +72,7 @@
               <label for="emailInput"><i class="bi bi-envelope me-2"></i>Email</label>
           </div>
 
-          <!-- PASSWORD & KONFIRMASI (sejajar di desktop) -->
+          <!-- PASSWORD & KONFIRMASI -->
           <div class="row">
               <div class="col-md-6 form-floating mb-3">
                   <input type="password" name="password"
