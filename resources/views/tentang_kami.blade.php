@@ -25,7 +25,7 @@
 <!-- =========  HERO GAMBAR / STATISTIK ========= -->
 <section class="statistik-section">
   <div class="image-wrapper">
-    <img src="{{ asset('assets/kantor2.png') }}" alt="Konsultasi" class="main-image"/>
+    <img src="{{ asset('assets/kantor.png') }}" alt="Konsultasi" class="main-image"/>
   </div>
 </section>
 
